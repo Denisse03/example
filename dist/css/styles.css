@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#app {
+  padding: 50px;
+}
+
+.home label,
+.home input {
+  display: block;
+}
+.home label {
+  margin-bottom: 20px;
+}
+.home input {
+  margin-bottom: 40px;
+  height: 40px;
+  width: 50%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.home .profile {
+  width: 50%;
+  height: 100%;
+}
+.home .profile .profileImage {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.home .profile .profileImage img {
+  width: 100%;
+}
