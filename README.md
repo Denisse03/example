@@ -33,3 +33,4 @@ This is where the users are able to sign out of the account.
 3. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 4. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 5. https://firebase.google.com/docs/firestore/manage-data/delete-data
+6. https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
