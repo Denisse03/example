@@ -207,7 +207,6 @@ onSnapshot(collection(db, "diarys"), (snapshot) => {
     const docId = $(this).data("id");
     try {
       await deleteDoc(doc(db, "diarys", docId));
-      console.log(`Post with ID: ${docId} deleted successfully.`);
     } catch (error) {
       console.error("Error deleting document: ", error.message);
     }
