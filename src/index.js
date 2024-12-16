@@ -43,32 +43,6 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-async function translatePage(targetLang) {
-  const indexs = $(".translate");
-  for (let index of indexs) {
-    const originalText = $(index).text().trim();
-    if (originalText) {
-      const translatedText = await translateText(originalText, targetLang);
-      $(index).text(translatedText);
-    }
-  }
-  initListeners();
-}
-
-async function translateText(text, targetLang) {
-  const response = await fetch(deeplApiUrl, {
-    method: "POST",
-    body: new URLSearchParams({
-      auth_key: deeplApiKey,
-      text: text,
-      target_lang: targetLang,
-    }),
-  });
-
-  const data = await response.json();
-  return data.translations[0].text;
-}
-
 function initListeners() {
   $("#languages").on("change", function () {
     const selectedLang = $(this).val();
@@ -95,6 +69,32 @@ function initListeners() {
     };
     addDiaryToDB(diaryObj);
   });
+
+  async function translatePage(targetLang) {
+    const indexs = $(".translate");
+    for (let index of indexs) {
+      const originalText = $(index).text().trim();
+      if (originalText) {
+        const tranInfo = await tranPost(originalText, targetLang);
+        $(index).text(tranInfo);
+      }
+    }
+    initListeners();
+  }
+
+  async function tranPost(text, targetLang) {
+    const response = await fetch(deeplApiUrl, {
+      method: "POST",
+      body: new URLSearchParams({
+        auth_key: deeplApiKey,
+        text: text,
+        target_lang: targetLang,
+      }),
+    });
+
+    const data = await response.json();
+    return data.translations[0].text;
+  }
 
   $("#signInBtn").on("click", (e) => {
     let email = $("#sEmail").val();
