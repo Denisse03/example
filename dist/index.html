@@ -7,50 +7,23 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#games">games</a>
-      <a href="#contact" id="show">Show Profile</a>
-      <a href="#" id="signout">Sign Out</a>
-    </nav>
     <div id="app">
       <div class="home">
-        <h1>Sign Up</h1>
-        <label for="fName">First Name</label>
-        <input type="text" id="fName" placeholder="first Name..." />
-        <label for="lName">Last Name</label>
-        <input type="text" id="lName" placeholder="Last Name..." />
+        <h1>nayreth</h1>
 
-        <label for="imageURL">Image URL</label>
-        <input type="text" id="imageURL" placeholder="Image Url..." />
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Email Address..." />
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password..." />
-
-        <input type="submit" id="submit" value="Sign Up" />
+        <label class="translate" for="langs" id="langs"
+          >Pick your prefer language</label
+        >
+        <select name="languages" id="languages">
+          <option value="EN">English</option>
+          <option value="FR">French</option>
+          <option value="ES">Spanish</option>
+          <option value="DE">German</option>
+        </select>
+        <a class="translate" href="login.html">Continue</a>
       </div>
     </div>
 
-    <div class="profile">
-      <h1>This is my profile</h1>
-      <p class="displayName"></p>
-      <div class="profileImage"></div>
-    </div>
-
-    <div class="sn">
-      <h1>Sign In</h1>
-
-      <label for="email">Email Address</label>
-      <input type="text" id="sEmail" placeholder="Email Address..." />
-
-      <label for="fName">Password</label>
-      <input type="text" id="sPassword" placeholder="Password..." />
-
-      <input type="submit" id="signInBtn" value="Sign In" />
-    </div>
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="app/app.js"></script>
   </body>

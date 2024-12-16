@@ -19,9 +19,18 @@ p {
   margin-bottom: 16px;
 }
 
+#app {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 nav {
   height: 50px;
-  background-color: black;
+  background-color: #0d2fb1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -36,16 +45,48 @@ nav a {
   padding: 50px;
 }
 
-.home label,
-.home input {
-  display: block;
+.home h1 {
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250px;
 }
 .home label {
-  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.home a {
+  margin-top: 40px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #0d2fb1;
+  padding: 15px 30px;
+  margin-left: 650px;
+}
+.home select {
+  margin-top: 30px;
+  width: 650px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
 }
 .home input {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
-  height: 40px;
+  height: 140px;
   width: 50%;
   border-radius: 5px;
   padding-left: 10px;
@@ -62,4 +103,166 @@ nav a {
 }
 .home .profile .profileImage img {
   width: 100%;
+}
+
+.sn h3 {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.sn h6 {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.sn label,
+.sn input {
+  display: block;
+}
+.sn label {
+  margin: 0 auto;
+  height: 40px;
+  width: 500px;
+}
+.sn input {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 500px;
+  padding-left: 10px;
+}
+.sn a {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-left: 650px;
+}
+
+.sign h1 {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.sign label,
+.sign input {
+  display: block;
+}
+.sign label {
+  margin: 0 auto;
+  height: 40px;
+  width: 500px;
+}
+.sign input {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 500px;
+  padding-left: 10px;
+}
+
+#diary h1 {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+#diary label,
+#diary input {
+  display: block;
+}
+#diary label {
+  margin: 0 auto;
+  height: 40px;
+  width: 500px;
+}
+#diary input {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 500px;
+  padding-left: 10px;
+}
+
+.diary h3 {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diary p {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.diary img {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diary button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.profile h1 {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .displayName {
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile a {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-left: 650px;
 }
